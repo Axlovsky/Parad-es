@@ -72,12 +72,13 @@ body {
 }
 
 .page-intro h1 {
+  color: #091511;
   font-size: clamp(3rem, 7vw, 5.5rem);
 }
 
 .page-intro > p:last-child,
 .variant p {
-  color: var(--muted);
+  color: #0f1c17;
   line-height: 1.75;
 }
 
