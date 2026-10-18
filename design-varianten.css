@@ -1,0 +1,257 @@
+:root {
+  --bg-deep: #08130f;
+  --bg-mid: #102119;
+  --panel: rgba(18, 30, 25, 0.78);
+  --panel-border: rgba(149, 206, 176, 0.24);
+  --text: #edf7f0;
+  --muted: #b7d5c2;
+  --accent: #9ae6b4;
+  --accent-strong: #d7f7e5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(58, 112, 91, 0.38), transparent 28%),
+    linear-gradient(180deg, var(--bg-deep), var(--bg-mid));
+}
+
+.variant-page {
+  max-width: 1200px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.variant-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.brand {
+  color: var(--accent-strong);
+  font-weight: 700;
+  letter-spacing: 0.42rem;
+  text-decoration: none;
+}
+
+.back-link {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--text);
+}
+
+.page-intro {
+  padding: 4rem 20px 2rem;
+}
+
+.page-intro h1,
+.variant h3,
+.premium-card h4 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.page-intro h1 {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+}
+
+.page-intro > p:last-child,
+.variant p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: var(--accent);
+  font-size: 0.76rem;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+}
+
+.variant {
+  margin: 1.25rem 20px;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border: 1px solid var(--panel-border);
+  border-radius: 1.25rem;
+  background: var(--panel);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.2);
+}
+
+.variant-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+}
+
+.variant-heading h2 {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.variant-label,
+.premium-tag {
+  color: var(--accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+.minimal-layout,
+.editorial-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.variant h3 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+}
+
+.minimal-layout blockquote {
+  margin: 0;
+  padding: 1.5rem;
+  border-left: 2px solid var(--accent);
+  color: var(--accent-strong);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 1.1;
+}
+
+.minimal-layout cite {
+  display: block;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  text-align: right;
+}
+
+.editorial-layout {
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+.editorial-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.editorial-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.editorial-list span {
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+.premium-heading {
+  margin-bottom: 1.5rem;
+}
+
+.premium-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.premium-card {
+  padding: 1.4rem;
+  border: 1px solid var(--panel-border);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.premium-card.highlighted {
+  background: linear-gradient(180deg, rgba(154, 230, 180, 0.1), rgba(18, 30, 25, 0.8));
+}
+
+.premium-tag {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid rgba(154, 230, 180, 0.35);
+  border-radius: 999px;
+  background: rgba(154, 230, 180, 0.06);
+}
+
+.premium-card h4 {
+  margin-bottom: 0.8rem;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.premium-card p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .minimal-layout,
+  .editorial-layout,
+  .premium-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .variant-page {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .variant-header {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .brand {
+    letter-spacing: 0.25rem;
+  }
+
+  .page-intro {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .variant {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .variant-heading {
+    display: block;
+  }
+}
