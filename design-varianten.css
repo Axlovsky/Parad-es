@@ -22,9 +22,10 @@ body {
   min-height: 100vh;
   color: var(--text);
   font-family: "Inter", sans-serif;
-  background:
-    radial-gradient(circle at top, rgba(165, 193, 176, 0.38), transparent 28%),
-    linear-gradient(180deg, var(--bg-deep), var(--bg-mid));
+  background-color: #a5c1b0;
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(8, 19, 15, 0.42), transparent 30%),
+    radial-gradient(circle at 82% 68%, rgba(8, 19, 15, 0.34), transparent 34%);
 }
 
 .variant-page {
@@ -42,19 +43,19 @@ body {
 }
 
 .brand {
-  color: var(--accent-strong);
+  color: #091511;
   font-weight: 700;
   letter-spacing: 0.42rem;
   text-decoration: none;
 }
 
 .back-link {
-  color: var(--muted);
+  color: #0f1c17;
   text-decoration: none;
 }
 
 .back-link:hover {
-  color: var(--text);
+  color: #091511;
 }
 
 .page-intro {
@@ -88,6 +89,10 @@ body {
   font-size: 0.76rem;
   letter-spacing: 0.16rem;
   text-transform: uppercase;
+}
+
+.page-intro .eyebrow {
+  color: #244331;
 }
 
 .variant {
