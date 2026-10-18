@@ -164,25 +164,10 @@ body {
   grid-template-columns: 1.2fr 0.8fr;
 }
 
-.editorial-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.editorial-list li {
+.editorial-cards {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-  align-items: baseline;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--text);
-  line-height: 1.5;
-}
-
-.editorial-list span {
-  color: var(--accent);
-  font-size: 0.8rem;
 }
 
 .premium-heading {
