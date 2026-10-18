@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parad-es &acirc;&euro;� Design Varianten</title>
+    <title>Parad-es &mdash; Designvarianten</title>
     <meta
       name="description"
-      content="Drei Stilvarianten f&Atilde;&frac14;r die Parad-es Landingpage: minimal, editorial und premium."
+      content="Drei Gestaltungsvarianten f&uuml;r die Parad-es-Startseite."
     />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,136 +18,121 @@
     <link rel="stylesheet" href="design-varianten.css" />
   </head>
   <body>
-    <div class="w3-content w3-padding-32">
-      <header class="w3-bar w3-padding-16 header-bar">
-        <div class="w3-bar-item brand">PARAD-ES</div>
-        <div class="w3-bar-item w3-right w3-text-grey">3 Varianten</div>
+    <div class="w3-content w3-padding-32 variant-page">
+      <header class="variant-header">
+        <a class="brand" href="index.html">PARAD-ES</a>
+        <a class="back-link" href="index.html">&larr; Zur Startseite</a>
       </header>
 
       <main>
-        <section class="variant variant-minimal w3-card-4 w3-margin-bottom">
-          <div class="variant-head">
+        <section class="page-intro">
+          <p class="eyebrow">Gestaltung &bull; Haltung &bull; Zukunft</p>
+          <h1>Designvarianten</h1>
+          <p>Drei Richtungen f&uuml;r die Gestaltung von Parad-es.</p>
+        </section>
+
+        <section class="variant variant-minimal" aria-labelledby="minimal-title">
+          <div class="variant-heading">
             <span class="variant-label">Variante 1</span>
-            <h3>Sehr minimal</h3>
+            <h2 id="minimal-title">Sehr minimal</h2>
           </div>
-
-          <div class="w3-row-padding">
-            <div class="w3-col l7 m12 s12 w3-padding-large">
-              <p class="eyebrow">Erinnerung &acirc;&euro;&cent; Verstehen &acirc;&euro;&cent; Gestalten</p>
-              <h1>Wir bewahren, was uns macht.</h1>
-              <p class="lede">
-                Parad-es ist ein Ort der Klarheit und Verwandlung: eine Stimme f&Atilde;&frac14;r
-                Erinnerung, Selbstvergewisserung und eine lebensf&Atilde;&para;rderliche Welt.
+          <div class="minimal-layout">
+            <div>
+              <p class="eyebrow">Erinnern &bull; Verstehen &bull; Gestalten</p>
+              <h3>Wir bewahren, was uns macht.</h3>
+              <p>
+                Parad-es ist ein Ort der Klarheit und Verwandlung: eine Stimme f&uuml;r
+                Erinnerung, Selbstvergewisserung und eine lebensf&ouml;rderliche Welt.
               </p>
-              <div class="button-row">
-                <a class="w3-button w3-round-xxlarge w3-dark-grey" href="#"
-                  >Mehr erfahren</a
-                >
-                <a class="w3-button w3-round-xxlarge w3-white" href="#"
-                  >Zur Idee</a
-                >
-              </div>
             </div>
-
-            <div class="w3-col l5 m12 s12 w3-padding-large">
-              <div class="mini-quote">
-                <span class="quote-mark">&acirc;&euro;�</span>
-                <p>
-                  Wenn wir vergessen, wer wir waren, h&Atilde;&para;ren wir auf zu sein, wer wir
-                  sind.
-                </p>
-                <small>&acirc;&euro;� axlovsky</small>
-              </div>
-            </div>
+            <blockquote>
+              &ldquo;Wenn wir vergessen, wer wir waren, h&ouml;ren wir auf zu sein,
+              wer wir sind.&rdquo;
+              <cite>&mdash; axlovsky</cite>
+            </blockquote>
           </div>
         </section>
 
-        <section class="variant variant-editorial w3-card-4 w3-margin-bottom">
-          <div class="variant-head">
+        <section class="variant variant-editorial" aria-labelledby="editorial-title">
+          <div class="variant-heading">
             <span class="variant-label">Variante 2</span>
-            <h3>Editorial</h3>
+            <h2 id="editorial-title">Editorial</h2>
           </div>
-
           <div class="editorial-layout">
             <div class="editorial-copy">
-              <p class="eyebrow">Sinn &acirc;&euro;&cent; Sicht &acirc;&euro;&cent; Zukunft</p>
-              <h1>Ich bin Sch&Atilde;&para;pfer durch Wort und Tat.</h1>
+              <p class="eyebrow">Sinn &bull; Sicht &bull; Zukunft</p>
+              <h3>Ich bin Sch&ouml;pfer durch Wort und Tat.</h3>
               <p>
-                Ich bin Gedanken, Gedichte, Bilder und Visionen. Ich bin K&Atilde;&para;rper im
-                Raum, in der Natur und in Bewegung. Durch aktives Gestalten der
-                eigenen Umwelt sch&Atilde;&frac14;tzen wir die Welt, die uns tr&Atilde;&curren;gt.
+                Parad-es ist ein Ort der Klarheit und Verwandlung: eine Stimme f&uuml;r
+                Erinnerung, Selbstvergewisserung und eine lebensf&ouml;rderliche Welt.
+                Ich bin Gedanken, Gedichte, Bilder und Visionen. Ich bin K&ouml;rper
+                im Raum, in der Natur und in Bewegung. Durch aktives Gestalten der
+                eigenen Umwelt sch&uuml;tzen wir die Welt, die uns tr&auml;gt.
               </p>
             </div>
-
-            <div class="editorial-side">
-              <article class="editorial-card">
-                <span class="editorial-tag">Sinn</span>
-                <h2>Ich bin viel.</h2>
+            <div class="editorial-cards">
+              <article class="premium-card">
+                <span class="premium-tag">Sinn</span>
+                <h4>Ich bin viel.</h4>
                 <p>
-                  Gedanken, Gedichte, Bilder und Visionen. Körper im Raum, in der
-                  Natur und in Bewegung.
+                  Gedanken, Gedichte, Bilder und Visionen. K&ouml;rper im Raum, in
+                  der Natur und in Bewegung.
                 </p>
               </article>
-              <article class="editorial-card">
-                <span class="editorial-tag">Sch&Atilde;&para;pfung</span>
-                <h2>Ich bin Sch&Atilde;&para;pfer.</h2>
+              <article class="premium-card">
+                <span class="premium-tag">Sch&ouml;pfung</span>
+                <h4>Ich bin Sch&ouml;pfer.</h4>
                 <p>
-                  Durch Wort und Tat die eigene Umwelt gestalten und bewusst in
-                  der Welt wirken.
+                  Durch Wort und Tat die eigene Umwelt gestalten und bewusst in der
+                  Welt wirken.
                 </p>
               </article>
-              <article class="editorial-card highlighted">
-                <span class="editorial-tag">Vision</span>
-                <h2>Eine sch&Atilde;&frac14;tzende Welt.</h2>
+              <article class="premium-card highlighted">
+                <span class="premium-tag">Vision</span>
+                <h4>Eine sch&uuml;tzende Welt.</h4>
                 <p>
                   Die Erde, der Mensch und die Zukunft sind miteinander verwoben.
-                  Mit Haltung sch&Atilde;&frac14;tzen, heilen und gestalten.
+                  Mit Haltung sch&uuml;tzen, heilen und gestalten.
                 </p>
               </article>
             </div>
           </div>
         </section>
 
-        <section class="variant variant-premium w3-card-4 w3-margin-bottom">
-          <div class="variant-head">
+        <section class="variant variant-premium" aria-labelledby="premium-title">
+          <div class="variant-heading">
             <span class="variant-label">Variante 3</span>
-            <h3>Premium</h3>
+            <h2 id="premium-title">Premium</h2>
           </div>
-
-          <div class="premium-layout">
-            <div class="premium-headline">
-              <p class="eyebrow">Erinnerung &acirc;&euro;&cent; Selbstvergewisserung &acirc;&euro;&cent; Welt</p>
-              <h1>Wir bewahren, was uns macht.</h1>
-            </div>
-
-            <div class="premium-grid">
-              <article class="premium-card">
-                <span class="premium-tag">Sinn</span>
-                <h2>Ich bin viel.</h2>
-                <p>
-                  Gedanken, Gedichte, Bilder und Visionen. K&Atilde;&para;rper im Raum, in der
-                  Natur und in Bewegung.
-                </p>
-              </article>
-
-              <article class="premium-card">
-                <span class="premium-tag">Sch&Atilde;&para;pfung</span>
-                <h2>Ich bin Sch&Atilde;&para;pfer.</h2>
-                <p>
-                  Wort und Tat, eigene Umwelt gestalten, die Welt mit Haltung
-                  sch&Atilde;&frac14;tzen und heilen.
-                </p>
-              </article>
-
-              <article class="premium-card highlighted">
-                <span class="premium-tag">Vision</span>
-                <h2>Eine sch&Atilde;&frac14;tzende Welt.</h2>
-                <p>
-                  Die Erde, der Mensch und die Zukunft sind verwoben. Wir gestalten
-                  mit Verantwortung.
-                </p>
-              </article>
-            </div>
+          <div class="premium-heading">
+            <p class="eyebrow">Erinnerung &bull; Selbstvergewisserung &bull; Welt</p>
+            <h3>Wir bewahren, was uns macht.</h3>
+          </div>
+          <div class="premium-grid">
+            <article class="premium-card">
+              <span class="premium-tag">Sinn</span>
+              <h4>Ich bin viel.</h4>
+              <p>
+                Gedanken, Gedichte, Bilder und Visionen. K&ouml;rper im Raum, in der
+                Natur und in Bewegung.
+              </p>
+            </article>
+            <article class="premium-card">
+              <span class="premium-tag">Sch&ouml;pfung</span>
+              <h4>Ich bin Sch&ouml;pfer.</h4>
+              <p>
+                Wort und Tat, die eigene Umwelt gestalten und die Welt mit Haltung
+                sch&uuml;tzen und heilen.
+              </p>
+            </article>
+            <article class="premium-card highlighted">
+              <span class="premium-tag">Vision</span>
+              <h4>Eine sch&uuml;tzende Welt.</h4>
+              <p>
+                Die Erde, der Mensch und die Zukunft sind verwoben. Wir gestalten
+                mit Verantwortung.
+              </p>
+            </article>
           </div>
         </section>
       </main>
